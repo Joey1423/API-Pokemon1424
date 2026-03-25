@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "node --watch aaaammjjhhss/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
