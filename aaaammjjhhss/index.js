@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 3003
 const pokemons = require('../db-pokemons')
@@ -1121,6 +1122,10 @@ app.get('/api/pokemons', (req, res) => {
   }))
 
   res.json(success(message, pokemonsWithImages))
+})
+
+app.get('/bonus', (req, res) => {
+  res.sendFile(path.join(__dirname, 'bonus.html'))
 })
 
 app.listen(port, () => {
